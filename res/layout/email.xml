@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:padding="5dp">
+		
+		<TabWidget
+			android:id="@android:id/tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" />
+		
+		<FrameLayout
+			android:id="@android:id/tabcontent"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:padding="5dp">
+			
+			<ViewFlipper
+		        android:id="@+id/inbox_tab"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<ListView android:id="@+id/inbox_list"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:divider="@color/listDivider"
+					android:dividerHeight="1dp">
+				</ListView>
+				<LinearLayout
+				    android:orientation="vertical"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:paddingTop="5dp"
+				    android:paddingRight="10dp"
+				    android:paddingBottom="10dp"
+				    android:paddingLeft="10dp">
+				    <TextView
+					    android:id="@+id/inbox_subject"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="16dp"
+					    android:textStyle="bold"
+					    android:ellipsize="end"
+					    android:singleLine="true" />
+				    <TextView
+					    android:id="@+id/inbox_from"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="14dp"
+					    android:ellipsize="end"
+					    android:singleLine="true" />
+				    <TextView
+					    android:id="@+id/inbox_date"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginBottom="16dp"
+					    android:textSize="14dp"
+					    android:ellipsize="end"
+					    android:singleLine="true" />
+					<WebView 
+					    android:id="@+id/inbox_message"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent" />
+				</LinearLayout>
+		    </ViewFlipper>
+		    
+			<ViewFlipper
+		        android:id="@+id/sent_tab"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<ListView android:id="@+id/sent_list"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:divider="@color/listDivider"
+					android:dividerHeight="1dp">
+				</ListView>
+				<LinearLayout
+				    android:orientation="vertical"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:paddingTop="5dp"
+				    android:paddingRight="10dp"
+				    android:paddingBottom="10dp"
+				    android:paddingLeft="10dp">
+				    <TextView
+					    android:id="@+id/sent_subject"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="16dp"
+					    android:textStyle="bold"
+					    android:ellipsize="end"
+					    android:singleLine="true" />
+				    <TextView
+					    android:id="@+id/sent_from"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:textSize="14dp"
+					    android:ellipsize="end"
+					    android:singleLine="true" />
+				    <TextView
+					    android:id="@+id/sent_date"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginBottom="16dp"
+					    android:textSize="14dp"
+					    android:ellipsize="end"
+					    android:singleLine="true" />
+					<WebView 
+					    android:id="@+id/sent_message"
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent" />
+				</LinearLayout>
+		    </ViewFlipper>
+			
+		</FrameLayout>
+	</LinearLayout>
+</TabHost>
