@@ -12,3 +12,33 @@ This is the Android version; I also created a version for iOS: https://github.co
 In the file Scraper.java, there is a constant called FAKE_NETWORK_DATA that specifies whether placeholder data is used or not. It is set to true by default, which means that supplied credentials aren't actually used and no data is scraped from the website.
 
 To run the project, you will need to have a recent version of Android Developer Tools installed.
+
+## Screenshots
+
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot1.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot1.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot2.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot2.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot3.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot3.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot4.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot4.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot5.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot5.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot6.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot6.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot7.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot7.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot8.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot8.png" width="283" align="left">
+</a>
+<a href="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot9.png" target="_blank">
+  <img src="https://github.com/calvinlough/myUsask-android/raw/master/screenshots/screenshot9.png" width="283" align="left">
+</a>
