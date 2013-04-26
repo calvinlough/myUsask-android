@@ -130,6 +130,11 @@ public final class Scraper {
 	
 	public boolean login(String nsid, String password) {
 		if (FAKE_NETWORK_DATA) {
+			try {
+				Thread.sleep(2500);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 			return true;
 		}
 		
