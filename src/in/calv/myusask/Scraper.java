@@ -208,13 +208,25 @@ public final class Scraper {
 		cachedInbox = new ArrayList<Email>();
 		
 		if (FAKE_NETWORK_DATA) {
-			Email email = new Email("1", "John Smith", "testing", "01/17/12 6:23PM");
+			Email email = new Email("1", "Esther Petty", "Class tomorrow", "04/23/13 02:36 PM");
 			cachedInbox.add(email);
 			
-			email = new Email("2", "Jane Smith", "more testing", "01/15/12 6:23PM");
+			email = new Email("2", "Brittany McCarley", "Assignment #3", "04/23/13 11:02 AM");
 			cachedInbox.add(email);
 			
-			email = new Email("3", "Tyler Smith", "even more testing", "06/10/11 6:23PM");
+			email = new Email("3", "Thomas Finley", "Re: Lunch friday?", "04/22/13 11:51 PM");
+			cachedInbox.add(email);
+			
+			email = new Email("4", "Daniel Dunlap", "Hey", "04/22/13 01:19 PM");
+			cachedInbox.add(email);
+			
+			email = new Email("5", "Scott Koury", "(no subject)", "04/21/13 01:19 PM");
+			cachedInbox.add(email);
+			
+			email = new Email("6", "Thomas Finley", "Lunch friday?", "04/20/13 01:19 PM");
+			cachedInbox.add(email);
+			
+			email = new Email("7", "Williams McGhie", "Finals", "04/18/13 01:19 PM");
 			cachedInbox.add(email);
 			
 			return true;
@@ -235,10 +247,10 @@ public final class Scraper {
 		cachedSent = new ArrayList<Email>();
 		
 		if (FAKE_NETWORK_DATA) {
-			Email email = new Email("1", "John Smith", "Re: testing", "01/17/12 7:05PM");
+			Email email = new Email("1", "Thomas Finley", "Re: Lunch friday?", "04/23/13 08:59 PM");
 			cachedSent.add(email);
 			
-			email = new Email("2", "Jane Smith", "Re: more testing", "01/15/12 7:05PM");
+			email = new Email("2", "Thomas Finley", "Re: Lunch friday?", "04/21/13 06:35 PM");
 			cachedSent.add(email);
 			
 			return true;
@@ -253,7 +265,7 @@ public final class Scraper {
 	
 	public boolean fetchEmailMessage(Email email, boolean isSentMessage) {
 		if (FAKE_NETWORK_DATA) {
-			email.message = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+			email.message = "Hey, just wondering if you are interested in grabbing lunch on Friday? There is that new sushi place downtown that I want to check out. I forget what it's called, but it's right across the street from Hudson's.";
 			
 			return true;
 		}
@@ -313,10 +325,25 @@ public final class Scraper {
 		cachedClassList = new ArrayList<Class>();
 		
 		if (FAKE_NETWORK_DATA) {
-			Class c = new Class("1", "Physics", "PHYS 110");
+			Class c = new Class("1", "Physics and the Universe", "PHYS 115.3");
 			cachedClassList.add(c);
 			
-			c = new Class("1", "Calculus", "MATH 110");
+			c = new Class("1", "General Chemistry I", "CHEM 112.3");
+			cachedClassList.add(c);
+			
+			c = new Class("1", "Calculus I", "MATH 110.3");
+			cachedClassList.add(c);
+			
+			c = new Class("1", "Introduction to Computer Science and Programming", "CMPT 111.3");
+			cachedClassList.add(c);
+			
+			c = new Class("1", "Literature and Composition", "ENG 110.6");
+			cachedClassList.add(c);
+			
+			c = new Class("1", "Introduction to Philosophy", "PHIL 110.6");
+			cachedClassList.add(c);
+			
+			c = new Class("1", "The Nature of Life", "BIOL 120.3");
 			cachedClassList.add(c);
 			
 			return true;
@@ -346,9 +373,17 @@ public final class Scraper {
 		ArrayList<String> classMembers = new ArrayList<String>();
 		
 		if (FAKE_NETWORK_DATA) {
-			classMembers.add("John Smith");
-			classMembers.add("Jane Smith");
-			classMembers.add("Tyler Smith");
+			classMembers.add("Irwin, Joseph");
+			classMembers.add("Griffin, Robert");
+			classMembers.add("Crawford, Carol");
+			classMembers.add("Westbrook, Anjanette");
+			classMembers.add("Rodgers, Craig");
+			classMembers.add("Cole, Pearl");
+			classMembers.add("Torres, Jenette");
+			classMembers.add("Beach, Wilson");
+			classMembers.add("Hoag, Elizabeth");
+			classMembers.add("McKay, Larry");
+			classMembers.add("Wilson, Michael");
 			
 			return classMembers;
 		}
@@ -418,10 +453,22 @@ public final class Scraper {
 		cachedBulletins = new ArrayList<Bulletin>();
 		
 		if (FAKE_NETWORK_DATA) {
-			Bulletin b = new Bulletin("important bulletin", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+			Bulletin b = new Bulletin("Build Your Communication Talent: Toastmasters", "Build your Communication Talent:  Summer Fun with Public Speaking<br /><br />Campus Howlers Toastmasters Club<br /><br />May Open House,  Guests Welcome.<br /><br />Coffee and Breakfast Treats Provided.<br /><br />Come and check out a great place for you to develop your communication and leadership skills. Campus Howlers Toastmasters Club welcomes all guests to their upcoming Open House. Toastmasters International is a world leader in communication and leadership development. Members have many opportunities to practice public speaking, work on skills valuable for that next interview, and learn valuable leadership tools. A Toastmasters meeting is a learn-by-doing workshop with a no-pressure atmosphere. Invest in your future: check out a meeting near you. Campus Howlers Toastmasters has an Open House meeting, specially geared to show our guests how a Toastmasters Club can help.<br /><br />Wednesday May 1, 2013<br /><br />7:15 AM Ð 8:15 AM         Room 2D21 College of Agriculture<br /><br />For more information, contact:<br />campushowlers.toastmastersclubs.org/<br />or<br />contact-7536@toastmastersclubs.org");
 			cachedBulletins.add(b);
 			
-			b = new Bulletin("another bulletin", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+			b = new Bulletin("Public Lecture", "Dr. Julie Gibbings (University of Manitoba) is giving a public lecture at the Frances Morrison Library on Thursday April 25th at 6pm. The lecture is entitled \"The Work That History Does: Race, Labour, and Postcolonial Nationalism in Guatemala, 1860-1930. After the lecture, Dr. Gibbings will be joined by five university students to discuss the more general issue of access to history in terms of sources, teaching, and writing style. Questions from the audience will be welcome.");
+			cachedBulletins.add(b);
+			
+			b = new Bulletin("English Grad Banquet! Buy Tickets Soon!", "Greetings, the EUS is proud to host the first annual year-end banquet during the evening of May 24th at Marquis Hall. We'll be offering a buffet style dinner, with a small program to compliment the evening's festivities.");
+			cachedBulletins.add(b);
+			
+			b = new Bulletin("P.G. Sorenson Distinguished Graduate Lecture", "The field of educational assessment benefits from contributions in several domains including: cognitive science, measurement science, computer science, and instructional science. Dr. Zapata-Rivera will describe how his early research at the ARIES lab has informed his work on designing, implementing, and evaluating new generation assessments over the past ten years.");
+			cachedBulletins.add(b);
+			
+			b = new Bulletin("Seeking Women Aged 18 Ð 30", "To participate in a research study that will assist in the development of a testing procedure that may help improve the treatment of women with stress urinary incontinence.");
+			cachedBulletins.add(b);
+			
+			b = new Bulletin("Autism Spectrum Disorder Presentation, May 9", "Join us for a free public presentation and panel discussion that will discuss challenges and opportunities for adults with Autism, Asperger's Syndrome, and Pervasive Developmental Disorder. Representatives from the Autism Intervention Program, Autism Services of Saskatoon, and the University of Saskatchewan will speak about the history, diagnosis, and treatment of Autism Spectrum Disorder as well as community and academic resources.");
 			cachedBulletins.add(b);
 			
 			return true;

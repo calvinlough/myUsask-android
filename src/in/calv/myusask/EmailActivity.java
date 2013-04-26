@@ -145,7 +145,7 @@ public class EmailActivity extends TabActivity {
 			message = newMessage;
 		} while (didChange);
         
-        String formattedMessage = "<html><style>body {margin: 0; background: black; font-size: 14px; color: rgb(190, 190, 190)} a {color: rgb(190, 190, 190)} </style>" + message + "</html>";
+        String formattedMessage = "<html><style>body {margin: 0; background: black; font-size: 14px; line-height: 21px; color: rgb(190, 190, 190)} a {color: rgb(190, 190, 190)} </style>" + message + "</html>";
         
         WebView emailMessage = (WebView) findViewById(messageId);
         emailMessage.loadData(formattedMessage, "text/html", "UTF-8");
